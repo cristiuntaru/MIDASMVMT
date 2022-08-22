@@ -1,0 +1,317 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; 
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black);
+    padding: 10px 20px;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
+}
+
+.logo img {
+    width: 36px;
+}
+
+.header-flexbox {
+    display: flex;
+    align-items: center;
+}
+
+.normal-nav-ul {
+    font-family: Ubuntu, Arial, sans-serif;
+    font-weight: 500;
+    display: flex;
+    font-size: 6px;
+    color: white;
+    margin-right: 12px;
+
+    opacity: 0;
+    pointer-events: none;
+}
+
+.normal-nav-ul p {
+    transition: opacity 0.25s ease;
+}
+
+.normal-nav-ul p:hover,
+.normal-nav-ul p:focus {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.hamburger-box {
+    /*background-color:  lightcoral;*/
+    padding: 7px;
+}
+
+.hamburger-box:focus,
+.hamburger-box:hover {
+    background-color: var(--darkblue);
+    cursor: pointer;
+}
+
+.hamburger {
+    background-color: white;
+    height: 2.5px;
+    width: 20px;
+    margin: 3px 0;
+    border-radius: 2px;
+}
+
+
+
+
+/*/        SCREEN NAV        /*/
+
+
+.screen-nav,
+.screen-nav-workouts {
+    position: fixed;
+    top: 44px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: var(--black);
+    transform: translateX(-600px);
+    transition: transform 0.5s ease;
+}
+
+.screen-nav-workouts {
+    z-index: 1000;
+    transform: translateX(-1800px);
+}
+
+.screen-nav p,
+.screen-nav-workouts p {
+    font-family: Ubuntu, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 14px 0;
+    padding-left: 20px;
+    color: white;
+    box-shadow: 0 0 1px inset rgba(255, 255, 255, 0.3);
+    transition: opacity 0.25s ease;
+    background-color: var(--black);
+}
+
+.screen-nav-workouts p {
+    font-size: 20px;
+}
+
+.screen-nav p:hover,
+.screen-nav p:focus,
+.screen-nav-workouts p:hover,
+.screen-nav-workouts p:focus {
+    opacity: 0.35;
+    cursor: pointer;
+}
+
+
+
+
+/*/     Workouts normal navbar clicked*      /*/
+
+.workouts-normal {
+    position: relative;
+}
+
+.wn-hover {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 70px;                
+    background-color: white;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.wn-hover h5 {
+    color: black;
+}
+
+.wn-hover a {
+    color: black;
+}
+
+
+
+
+
+
+/*////////////////////////*/
+/*/    MEDIA QUERIS    /*/
+/*///////////////////////*/
+
+
+
+@media (min-width: 600px) {
+    header {
+        padding: 0 40px;
+    }
+
+    .hamburger-box {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .normal-nav-ul {
+        font-size: 20px;
+        margin-right: 0px;
+    
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .normal-nav-ul p {
+        padding: 0 18px;
+    }
+
+    .screen-nav,
+    .screen-nav-workouts {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .wn-hover {
+        padding: 15px 20px 20px;
+    }
+
+    .wn-hover h5 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .wn-hover p {
+        font-size: 15px;
+        margin: 14px 0;
+        padding: 0;
+    }
+
+    .wn-hover p:hover {
+        cursor: pointer;
+    }
+
+    .wn-hover p:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+
+
+
+
+
+
+@media (min-width: 1000px) {
+    header {
+        padding: 0 60px;
+    }
+
+    .logo img {
+        width: 46px;
+    }
+
+    .normal-nav-ul {
+        font-size: 22px;
+    }
+
+    .normal-nav-ul p {
+        padding: 0 30px;
+    }
+
+    .wn-hover {
+        top: 82px;
+        padding: 20px;
+    }
+
+    .wn-hover h5 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .wn-hover p {
+        margin: 18px 0;
+        font-size: 16px;
+        padding: 0;
+    }
+}
+
+
+
+
+@media (min-width: 1400px) {
+    header {
+        padding: 0 120px;
+    }
+
+    .logo img {
+        width: 54px;
+    }
+
+    .normal-nav-ul {
+        font-size: 24px;
+    }
+
+    .normal-nav-ul p {
+        padding: 0 40px;
+    }
+
+    .wn-hover {
+        padding: 30px;
+    }
+
+    .wn-hover h5 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .wn-hover p {
+        margin: 20px 0;
+        font-size: 18px;
+        padding: 0;
+    }
+}
+
+
+
+@media (min-width: 1800px) {
+    header {
+        padding: 0 160px;
+    }
+
+    .logo img {
+        width: 62px;
+    }
+
+    .normal-nav-ul {
+        font-size: 28px;
+    }
+
+    .normal-nav-ul p {
+        padding: 0 46px;
+    }
+
+    .wn-hover {
+        top: 106px;
+    }
+
+    .wn-hover {
+        padding: 30px;
+    }
+
+    .wn-hover h5 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .wn-hover p {
+        margin: 22px 0;
+        font-size: 20px;
+        padding: 0;
+    }
+}

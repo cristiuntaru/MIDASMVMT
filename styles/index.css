@@ -1,0 +1,58 @@
+/*/         Only first page code          /*/  
+
+.body {
+    background-color: var(--black);
+}
+
+.wn-hover {
+    background-color: var(--darkblue);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.wn-hover a,
+.wn-hover h5 {
+    color: rgba(255, 255, 255, 0.9);
+}  
+
+/*/        End of only first page code      /*/
+
+
+
+
+.heading1-div {
+    margin-top: 270px;
+}
+
+.heading1 {
+    font-family: Aboreto ,Roboto, Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+
+
+
+
+/*////////////////////////*/
+/*/    MEDIA QUERIS    /*/
+/*///////////////////////*/
+
+
+
+@media (min-width: 600px) {
+    .heading1 {
+        font-size: 62px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .heading1-div {
+        margin-top: 280px;
+    }
+
+    .heading1 {
+        font-size: 80px;
+    }
+}

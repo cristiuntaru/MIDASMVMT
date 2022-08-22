@@ -1,0 +1,464 @@
+/*/     Hero section     /*/
+
+.hero-section {
+    padding-top: 0;
+}
+
+.hero-section h2 {
+    font-family: Ubuntu, Arial, sans-serif;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.hero-section p {
+    font-size: 17px;
+    line-height: 1.2;
+    padding: 4px 0;
+}
+
+.hero-section span {
+    font-weight: 500;
+}
+
+
+
+/*/     Video code    /*/
+
+.iframe-container,
+.iframe-container-hero {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    margin: 15px 0 30px;
+}
+
+.iframe-container iframe,
+.iframe-container-hero iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*/     Category section     /*/
+.category-section {
+    margin-bottom: 30px; 
+    margin-top: 75px; 
+}
+
+.category-section h5 {
+    font-size: 24px;
+    font-family: Ubuntu, Arial, sans-serif;
+    margin-bottom: 16px;
+    text-decoration: underline;
+}
+
+.category-section a {
+    color: black;
+}
+
+.category-section p {
+    margin: 20px 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+
+
+/*/     Exercise Section    /*/
+
+.exercise-section {
+    padding-top: 64px;
+}
+
+.exercise-section + .exercise-section {
+    margin-top: 50px;
+}
+
+.exercise-section h5 {
+    font-family: Ubuntu, Arial, sans-serif;
+    font-size: 24px;
+}
+
+.section-flexbox {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.stats-container h6 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.stats-container p {
+    font-size: 16px;
+    padding: 8px 0;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+
+
+/*/     Final section   /*/
+
+.final-section {
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.final-section p {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    font-family: Aboreto, Arial, sans-serif;
+}
+
+
+
+
+
+/*////////////////////////*/
+/*/    MEDIA QUERIS    /*/
+/*///////////////////////*/
+
+
+@media (min-width: 600px) {
+    .hero-section h2 {
+        font-size: 32px;
+    }
+
+    .hero-section p {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .iframe-container,
+    .iframe-container-hero {
+        margin: 0 0 20px;
+    }
+    
+    .iframe-container iframe,
+    .iframe-container-hero iframe {
+        width: 70%;
+        height: 70%;
+        margin-top: 20px;
+    }
+
+
+    .category-section {
+        margin-bottom: 0; 
+        margin-top: -60px;
+        z-index: 100; 
+    }
+
+    .category-section h5 {
+        font-size: 28px;
+    }
+
+    .category-section p {
+        font-size: 18px;
+    }
+
+
+    .exercise-section h5 {
+        font-size: 26px;
+    }
+
+    .stats-container {
+        margin-top: -70px;
+    }
+
+    .stats-container p {
+        padding: 8px 0;
+        line-height: 1.3;
+    }
+
+}
+
+
+
+
+
+@media (min-width: 800px) {
+
+    .stats-container {
+        margin-top: -90px;
+        margin-bottom: 40px;
+    }
+}
+
+
+
+
+
+@media (min-width: 1000px) {
+    .hero-section {
+        padding-top: 50px;
+    }
+
+    .hero-section p {
+        max-width: 550px;
+    }
+
+    .iframe-container-hero iframe {
+        width: 50%;
+        height: 50%;
+        margin-top: 50px;
+    }
+
+    .iframe-container {
+        margin: 0;
+        padding-bottom: 50%;
+        max-width: 500px;
+        width: 50%;
+        height: 50%;;
+    }
+    
+    .iframe-container iframe {
+        width: 100%;
+        height: 55%;
+        margin-top: 0;
+    }
+
+    .category-section h5 {
+        font-size: 32px;
+    }
+
+    .category-section p {
+        font-size: 20px;
+    }
+
+
+    .exercise-section {
+        padding-top: 90px;
+    }
+
+    .exercise-section + .exercise-section {
+        margin-top: 0;
+    }
+
+    .section-flexbox {
+        display: flex;
+        flex-direction: row;
+        margin-top: 36px;
+    }
+
+    .stats-container {
+        margin-top: 0;
+        margin-right: 100px;
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    .stats-container h6 {
+        font-size: 20px;
+    }
+
+    .stats-container p {
+        padding: 8px 0;
+        line-height: 1.3;
+        font-size: 16px;
+    }
+
+    .final-section {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .final-section p {
+        font-size: 28px;
+    }
+}
+
+
+
+
+@media (min-width: 1200px) {
+    .exercise-section + .exercise-section {
+        margin-top: 100px;
+    }
+
+    .stats-container h6 {
+        font-size: 22px;
+    }
+
+    .stats-container p {
+        padding: 8px 0;
+        line-height: 1.4;
+        font-size: 18px;
+    }
+}
+
+
+
+@media (min-width: 1400px) {
+    .hero-section {
+        padding-top: 60px;
+    }
+
+    .hero-section h2 {
+        font-size: 36px;
+    }
+
+    .hero-section p {
+        font-size: 20px;
+        max-width: 750px;
+        padding: 8px 0;
+    }
+
+    .iframe-container-hero iframe {
+        margin-top: 80px;
+    }
+
+    .category-section h5 {
+        font-size: 30px;
+    }
+
+    .category-section p {
+        font-size: 20px;
+        margin: 26px 0;
+    }
+
+    .exercise-section {
+        padding-top: 100px;
+    }
+
+    .exercise-section h5 {
+        font-size: 28px;
+    }
+
+    .section-flexbox {
+        margin-top: 46px;
+    }
+
+    .stats-container h6 {
+        font-size: 20px;
+    }
+
+    .stats-container p {
+        padding: 12px 0;
+        line-height: 1.4;
+        font-size: 18px;
+    }
+
+    .final-section {
+        margin-top: 100px;
+    }
+}
+
+
+@media (min-width: 1600px) {
+    .exercise-section + .exercise-section {
+        margin-top: -100px;
+    }
+
+    .iframe-container {
+        margin: 0;
+        padding-bottom: 56.25%;
+        max-width: 600px;
+    }
+    
+    .iframe-container iframe {
+        width: 100%;
+        height: 42%;
+    }
+
+    .exercise-section {
+        padding-top: 100px;
+    }
+
+    .stats-container {
+        margin-top: 0;
+        margin-right: 160px;
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    
+    .final-section {
+        margin-top: -50px;
+    }
+}
+
+
+@media (min-width: 1800px) {
+    .hero-section {
+        padding-top: 70px;
+    }
+
+    .hero-section h2 {
+        font-size: 40px;
+    }
+
+    .hero-section p {
+        font-size: 22px;
+    }
+
+    .iframe-container-hero {
+        margin-bottom: 0;
+    }
+
+    .iframe-container-hero iframe {
+        margin-top: 70px;
+    }
+
+    .iframe-container {
+        margin: 0;
+        padding-bottom: 50%;
+        max-width: 700px;
+    }
+    
+    .iframe-container iframe {
+        width: 100%;
+        height: 55%;
+        margin-top: 0;
+    }
+
+
+    .category-section {
+        margin-top: -76px; 
+    }
+
+    .category-section h5 {
+        font-size: 34px;
+    }
+
+    .category-section p {
+        font-size: 26px;
+        margin: 32px 0;
+    }
+
+    .exercise-section {
+        margin-top: 0;
+    }
+
+    .exercise-section + .exercise-section {
+        margin-top: 50px;
+    }
+
+    .exercise-section h5 {
+        font-size: 34px;
+    }
+
+    .stats-container h6 {
+        font-size: 26px;
+    }
+
+    .stats-container p {
+        padding: 12px 0;
+        line-height: 1.4;
+        font-size: 24px;
+    }
+
+    .final-section {
+        margin-top: 100px;
+    }
+
+    .final-section p {
+        font-size: 40px;
+    }
+}

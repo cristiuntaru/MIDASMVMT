@@ -1,0 +1,338 @@
+/*/        Title Section          /*/
+
+.title {
+    padding-bottom: 14px;
+}
+
+.title h2 {
+    font-size: 34px;
+    font-family: Aboreto, Ubuntu, Arial, sans-serif;
+}
+
+
+
+
+/*/       Contact Section        /*/
+
+
+.contact-form h5 {
+    font-size: 18px;
+    margin: 14px 0 5px;
+    font-weight: 400;
+}
+
+.input {
+    padding: 0.4em 0.5em;
+    width: 100%;
+    outline: none;
+
+    border: 1px solid transparent;
+    border-bottom: 1px solid gray;
+    font-size: 16px;
+    color: rgb(78, 78, 78);
+}
+
+.input:focus {
+    border-bottom: 1px solid black;
+    color: black;
+}
+
+
+textarea {
+    padding: 0.4em 0.5em 4em;
+    width: 100%;
+    height: auto;
+    resize: vertical;
+    font-family: Boboto, Arial, sans-serif;
+    outline: none;
+    font-size: 16px;
+    color: rgb(78, 78, 78);
+    border: 1px solid gray;
+}
+
+textarea:focus {
+    color: black;
+    border: 1px solid black;
+}
+
+.submit-flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.invisible-input {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.submit {
+    padding: 0.4em 0.8em;
+    background: black;
+    border: 1px solid black;
+    color: white;
+    font-size: 16px;
+}
+
+.submit:hover,
+.submit:focus {
+    background-color: rgb(51, 51, 51);
+    cursor: pointer;
+    border: 1px solid rgb(51, 51, 51);
+}
+
+
+
+
+/*/      Social media        /*/
+
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email-box {
+    margin-top: 50px;
+    display: flex;
+    font-weight: 400;
+}
+
+.email {
+    font-weight: 700;
+    margin-left: 3px;
+}
+
+.sm-rowbox {
+    margin-top: 20px;
+}
+
+.sm-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+    padding: 0 30px;
+}
+
+.sm-box a {
+    color: black;
+}
+
+.sm-box p {
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.sm-icon {
+    width: 40px;
+}
+
+.sm-icon:hover,
+.sm-icon:focus,
+.sm-box p:hover,
+.sm-box p:focus {
+    cursor: pointer;
+}
+
+
+
+
+/*/            Final section           /*/
+
+
+.final-section {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-family: Aboreto, Arial, sans-serif;
+}
+
+
+
+
+
+
+
+/*////////////////////////*/
+/*/    MEDIA QUERIS    /*/
+/*///////////////////////*/
+
+
+@media (min-width: 600px) {
+    .contact-form h5 {
+        margin: 36px 0 5px;
+    }
+}
+
+
+
+@media (min-width: 1000px) {
+    .sm-rowbox {
+        display: flex;
+        margin-top: 50px;
+    }
+
+    .sm-castle {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .final-section {
+        margin-top: 150px;
+        margin-bottom: 50px;
+        font-size: 28px;
+    }
+}
+
+
+
+@media (min-width: 1400px) {
+    .title {
+       padding-top: 50px;
+       padding-bottom: 34px;
+    }
+
+    .title h2 {
+        font-size: 40px;
+    }
+
+    .content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .contact-form {
+        width: 100%;
+        max-width: 500px;
+        border: 2px solid rgba(0, 0, 0, 0.8);
+        padding-left: 50px;
+        padding-bottom: 36px;
+        border-radius: 10px;
+    }
+
+    .input,
+    textarea,
+    .submit-flex {
+        max-width: 400px;
+    }
+
+    .social-media {
+        align-items: center;
+        margin-right: 50px;
+    }
+
+    .email-box {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .email {
+        margin-left: 10px;
+    }
+
+    .sm-rowbox {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .sm-box {
+        margin-top: 60px;
+        padding: 0 50px;
+    }
+
+    .sm-box p {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+}
+
+
+@media (min-width: 1800px) {
+    
+    .title {
+        padding-bottom: 50px;
+    }
+
+    .title h2 {
+        font-size: 50px;
+    }
+
+
+    .contact-form {
+        width: 100%;
+        max-width: 700px;
+        padding-left: 50px;
+    }
+
+    .input,
+    textarea,
+    .submit-flex {
+        max-width: 600px;
+    }
+
+    .contact-form h5 {
+        font-size: 22px;
+    }
+
+    .input {
+        border: 2px solid transparent;
+        border-bottom: 2px solid gray;
+        font-size: 20px;
+    }
+
+    .input:focus {
+        border-bottom: 2px solid black;
+    }
+    
+    textarea {
+        padding: 0.4em 0.5em 4em;
+        font-size: 20px;
+        border: 2px solid gray;
+    }
+    
+    textarea:focus {
+        border: 2px solid black;
+    }
+
+    .submit-flex {
+        margin-top: 30px;
+    }
+
+    .submit {
+        font-size: 22px;
+    }
+    
+
+    .social-media {
+        margin-right: 0;
+    }
+
+    .email-box {
+        font-size: 26px;
+    }
+
+    .email {
+        margin-left: 12px;
+    }
+
+    .sm-icon {
+        width: 54px;
+    }
+
+    .sm-box p {
+        font-size: 24px;
+    }
+
+    .final-section {
+        margin-top: 200px;
+        margin-bottom: 50px;
+        font-size: 40px;
+    }
+}

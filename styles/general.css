@@ -1,0 +1,86 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+  
+    /*/       COLORS:      /*/
+
+    --purple:  rgb(42, 28, 51);
+    --red:     rgb(223, 41, 53);
+    --whitey:  rgba(253, 240, 213);
+
+    --black: #2e323f;
+    --darkblue: #3b4050;
+    --lightblue: #6f737f;
+    --bej: #a59678;
+
+
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-top: 90px;
+    /*background-color: var(--black);*/
+    font-family: Roboto, Arial, sans-serif;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+header, section, footer {
+    padding: 0 24px;
+}
+
+
+
+/*////////////////////////*/
+/*/    MEDIA QUERIS    /*/
+/*///////////////////////*/
+
+
+@media (min-width: 600px) {
+    header, section, footer {
+        padding: 0 100px;
+    }    
+}
+
+@media (min-width: 1000px) {
+    header, section, footer {
+        padding: 0 160px;
+    }    
+}
+
+@media (min-width: 1400px) {
+    header, section, footer {
+        padding: 0 220px;
+    }    
+}
+
+@media (min-width: 1800px) {
+    header, section, footer {
+        padding: 0 300px;
+    }    
+}
